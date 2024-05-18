@@ -4,7 +4,7 @@ from pymongo import MongoClient
 app = Flask(__name__)
 app.secret_key = '1234567'
 
-dbClient = MongoClient('mongodb://127.0.0.1:27017')
+dbClient = MongoClient('103.174.111.105/32')
 db = dbClient['chatbotdb']
 dbcol = db['chatbotcol']
 
